@@ -1,0 +1,15 @@
+body {
+  background: yellow;
+}
+
+.app {
+  background: white;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  /*padding: 1em;*/
+}
+
+.address-wrapper input {
+  display: block;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample Form</title>
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="mobile.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 500px)" href="main.css">
+  
+</head>
+<body>
+  <div class="app">
+
+    <div>
+      <h1>Sample Web Form</h1>
+    </div>
+
+    <div>
+      <form action="{x}" method="POST">
+        <div class="name-wrapper">
+          <input type="text" name="first_name" placeholder="First Name" size="40" maxlength="100" required>
+
+          <input type="text" name="last_name" placeholder="Last Name" size="40" maxlength="100" required>  
+        </div>
+
+        <div class="address-wrapper">
+          <input id="address-line1" 
+                 name="address-line1" 
+                 type="text" 
+                 placeholder="Street Address"
+                 class="input-xlarge">
+          <input id="city" 
+                 name="city" 
+                 type="text" 
+                 placeholder="City"
+                 class="input-xlarge">
+          <input id="state" 
+                 name="state" 
+                 type="text" 
+                 placeholder="State"
+                 class="input-xlarge"
+                 maxlength="2">
+          <input id="zip-code" 
+                 name="zip-code" 
+                 type="text" 
+                 placeholder="Zip Code"
+                 class="input-xlarge"
+                 maxlength="5">
+        </div>
+
+        <div class="date-wrapper">
+          <p>When Would You Like to Visit?</p>
+          <input type="date" min="2016-08-01" max="2017-12-31" name="booking_date">
+        </div>
+
+        <div class="language-wrapper">
+          <p>Language Preference</p>
+          <select id="user-language">
+            <option value="EN">English</option>
+            <option value="FR">French</option>
+            <option value="SP">Spanish</option>
+            <option value="CH">Chinese</option>
+            <option value="JP">Japanese</option>
+          </select> 
+        </div>
+     
+        <div class="requirements">
+          <textarea name="special_requirements" cols="40" rows="5" placeholder="Do you need help with access, or have any dietary requirements?"></textarea>
+        </div>
+     
+        <div class="button-wrapper">
+          <button type="reset">Start Over</button>
+          <button type="submit">Send Now</button>
+        </div>
+    
+      </form>
+    </div>
+  <script src="js/bundle.js"></script>
+</body>
+</html>
