@@ -2,23 +2,25 @@
 <html>
 <head>
   <title>Sample Form</title>
+
   <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="mobile.css">
   <link rel="stylesheet" type="text/css" media="screen and (min-width: 500px)" href="main.css">
-  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
   <div class="app">
-
     <div>
       <h1>Sample Web Form</h1>
     </div>
 
-    <div>
+    <div class="form-wrapper">
       <form action="{x}" method="POST">
         <div class="name-wrapper">
-          <input type="text" name="first_name" placeholder="First Name" size="40" maxlength="100" required>
+          <input type="text" class="names" name="first_name" placeholder="First Name" size="40" maxlength="100" required>
 
-          <input type="text" name="last_name" placeholder="Last Name" size="40" maxlength="100" required>  
+          <input type="text" class="names" name="last_name" placeholder="Last Name" size="40" maxlength="100" required>  
         </div>
 
         <div class="address-wrapper">
@@ -47,7 +49,7 @@
         </div>
 
         <div class="date-wrapper">
-          <p>When Would You Like to Visit?</p>
+          <p>I'd Like to Visit on...</p>
           <input type="date" min="2016-08-01" max="2017-12-31" name="booking_date">
         </div>
 

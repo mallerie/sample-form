@@ -1,11 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   background: gray;
 }
 
 .app {
   background: white;
-  width: 90%;
+  width: 95vw;
   height: 100vh;
   margin: auto;
-  /*padding: 1em;*/
+  padding: 1em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.name-wrapper > input {
+  width: 100%;
+  height: 4em;
+  border: 1px solid red;
+  margin: .25em auto;
+  padding: .25em;
+}
+
+.address-wrapper > input {
+  width: 100%;
+  height: 4em;
+  border: 1px solid red;
+  margin: .25em auto;
+  padding: .25em;
+}
+
+.date-wrapper > p {
+  border: 1px solid red;
+}
+
+.date-wrapper > input {
+  border: 1px solid red;
 }
